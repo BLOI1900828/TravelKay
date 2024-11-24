@@ -1,0 +1,296 @@
+:root {
+    --bg-logo: rgb(244, 94, 98);
+    --col_white: white;
+    --col_999: #999;
+    --col_blue_hover: rgb(64, 142, 253);
+    --col_rgba_74: rgba(0, 0, 0, 0.074);
+    --color_black: black;
+    --bg_blue: #e3ecff;
+    --color_green: #72d097;
+    --color_orange: #fc7347;
+
+    --bg_head_green: #27822a;
+
+    --col_grey_ca: #cccaca;
+
+    --color_black: black;
+
+
+    --bg_blue_price: #13357b;
+    --col_f2: #f2f2f2;
+
+    --col_grey_75: #757575;
+    --col_black_03: rgba(0, 0, 0, 0.3);
+
+    --col_blue_detail: rgb(45, 60, 81);
+    --col_gray_pay: rgb(128, 128, 128);
+
+    --bg-color-box: #eff8f3;
+    --bg-input: #fff;
+    --color-err: #ff2b00;
+    --bg-nav: #333;
+    --color-active-nav: #035b76;
+
+    
+
+
+
+    --bg_blue_btn:rgb(32, 80, 191);
+
+    /* ------- */
+    --bg-color-box: #eff8f3;
+    --bg-input: #fff;
+    --color-err: #ff2b00;
+    --bg-nav: #333;
+    --color-active-nav: #035b76;
+    --bg-total: url('../img/tour.jpg');
+    --bg-statis: url('../img/bill.jpg');
+    --bg-room_avai: url('../img/custumer.jpg');
+    --bg-room_booked: url('../img/order.jpg');
+    --bg-room_hired: url('../img/staff.jpg');
+    --bg-customer: url('../img/vietnam.jpg');
+
+}
+
+* {
+    font-style: initial;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+.centerX {
+    display: flex;
+    justify-content: center;
+}
+
+.centerY {
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.cap {
+    text-transform: capitalize;
+}
+
+.text_B {
+    font-weight: bold;
+}
+
+.font_18 {
+    font-size: 18px;
+}
+
+.font_20 {
+    font-size: 20px;
+}
+
+.font_22 {
+    font-size: 22px;
+}
+
+.font_23 {
+    font-size: 23px;
+}
+
+.font_26 {
+    font-size: 26px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.space_b {
+    display: flex;
+    justify-content: space-between;
+}
+
+.space_a {
+    display: flex;
+    justify-content: space-around;
+}
+
+.space_e {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.wh100 {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.no_deco {
+    text-decoration: none;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ml_15 {
+    margin-left: 15px;
+}
+
+.mt_15 {
+    margin-top: 15px;
+}
+
+.mr_15 {
+    margin-right: 15px;
+}
+
+
+.mb_15 {
+    margin-bottom: 15px;
+}
+
+/* ---------------------------- */
+
+
+.header-search {
+    width: 560px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-input-search {
+    border: 2px solid #ddd;
+    outline: none;
+    width: 615px;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 50px;
+    font-size: 16px;
+    position: relative;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    left: 18px;
+    color: var(--col_grey_75);
+    font-size: 18px !important;
+}
+.sub_none {
+    visibility: hidden;
+}
+
+
+
+.ctn_header_part {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 85%;
+
+    height: 15%;
+    border-bottom: 1px solid var(--col_rgba_74);
+    display: block;
+}
+
+
+
+
+
+
+.box_head_content {
+    padding: 20px;
+}
+
+.inp_search {
+    background-color: var(--col_rgba_74);
+    border: 0.2px solid #99999994;
+    width: 320px;
+    height: 45px;
+}
+
+.fa-magnifying-glass {
+    font-size: 23px;
+}
+
+
+.box_bell,
+.box_mail {
+    margin-right: 15px;
+}
+
+.box_cover {
+    width: 45px;
+    height: 45px;
+    background-color: var(--col_rgba_74);
+}
+
+
+.ctn_perfomance {
+    width: 100%;
+    height: 50%;
+
+}
+
+.ctn_order {
+    width: 100%;
+    height: 50%;
+
+}
+
+.content_text {
+    height: 10%;
+}
+
+.btn_login{
+    border: 1px solid var(--bg_blue_btn) ;
+    background-color: var(--bg_blue_btn) ;
+    
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    margin-right: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+
+    
+}
+
+
+
+.btn_login:hover{
+    scale: 1.05;
+    border: 1px solid var(--bg_blue_price);
+    background-color:  var(--bg_blue_price);
+    font-weight: bold;
+
+}

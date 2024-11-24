@@ -1,0 +1,529 @@
+:root {
+
+
+    /* ------- */
+   
+    --bg-revenue-today: url('https://img.freepik.com/free-photo/silver-golden-coins-falling-coins-wooden-wall_155003-7868.jpg?t=st=1714475970~exp=1714479570~hmac=53519b19a6c952828c0ecabe3886733345d00b3dd4de256400849a563d39012c&w=360');
+    --bg-revenue-year: url('https://as1.ftcdn.net/v2/jpg/03/21/63/28/1000_F_321632870_kmb8zAojEXMJ10CRwwM30of9Q0TQYxN8.jpg');
+    --bg-revenue-month: url('https://as1.ftcdn.net/v2/jpg/02/77/18/82/1000_F_277188285_BmZ7gYMS6mefo8uFUDTwtaeFZpgI5Dz6.jpg');
+    --bg-order-today: url('https://img.freepik.com/free-vector/order-now-banner_23-2148711629.jpg?t=st=1714477363~exp=1714480963~hmac=c973d2088439f90d663393b0ba7e1245ffe86f93c2273520f6c4d4fbc759ed5d&w=740');
+    --bg-order-month: url('https://img.freepik.com/free-vector/appointment-booking-with-smartphone-woman_23-2148568976.jpg?t=st=1714477412~exp=1714481012~hmac=116672780dd85ca69772a82a550896df2028889e4c76f241b25b226501adc169&w=740');
+    --bg-order-year: url('https://as2.ftcdn.net/v2/jpg/07/50/21/89/1000_F_750218943_n2fV311Xq5BYerXa0ZBTxRbHrlfBqy8E.jpg');
+   
+}
+
+
+body {
+    /* background-color: var(--bg_blue) !important; */
+    height: 100vh;
+}
+
+
+
+.container_manageroom {
+    background-color: var(--bg-nav);
+    color: white;
+    position: fixed;
+    width: 90%;
+    height: 95%;
+    top: 110px;
+    padding: 20px;
+    font-size: 18px;
+    user-select: none;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 10% 20% 60% 10%;
+}
+
+.hidden {
+    background-color: initial;
+    display: grid;
+    grid-template-columns: initial;
+    grid-template-rows: initial;
+}
+
+
+.ctn_home_ad {
+    width: 95%;
+    height: 88%;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-column-gap: 1%;
+    grid-template-rows: 49% 49%;
+    grid-row-gap: 2%;
+}
+
+.home_ad_item1 {
+    background-image: var(--bg-revenue-today);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 1 / 3;
+    text-shadow: 1px 1.5px 2px #333;
+    position: relative;
+}
+.home_ad_item::before {
+    border-radius: 14px;
+    content: "";
+    background-color: #00000055;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* transition: all 0.2s ease-in-out; */
+}
+.home_ad_item {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    border-radius: 12px;
+}
+
+.bxx {
+    z-index: 4;
+}
+
+.home_ad_item2 {
+    text-shadow: 1px 1.5px 2px #333;
+    background-image: var(--bg-revenue-year);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2 / 4;
+    position: relative;
+}
+
+.home_ad_item3 {
+    position: relative;
+    text-shadow: 1px 1.5px 2px #333;
+    background-image: var(--bg-revenue-month);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home_ad_item4 {
+    position: relative;
+    text-shadow: 1px 1.5px 2px #333;
+    background-image: var(--bg-order-today);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home_ad_item5 {
+    position: relative;
+    text-shadow: 1px 1.5px 2px #333;
+    background-image: var(--bg-order-month);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dont_hover {
+    scale: initial !important;
+}
+
+.home_ad_item6 {
+    position: relative;
+    text-shadow: 1px 1.5px 2px #333;
+    background-image: var(--bg-order-year);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-text-ad p {
+    text-transform: capitalize;
+    font-size: 23px;
+}
+.box-num-ad {
+    margin-top: 12px;
+    font-size: 25px;
+}
+/* --------- */
+
+.box_revenue{
+    width: 80%;
+    height: 80%;
+    background-color: #333;
+}
+.center{
+    display: flex !important;
+    justify-content: center !important ;
+    align-items: center !important;
+}
+/* 
+.container_infor_guests {
+    display: grid;
+    grid-template-rows: 10% auto 10% !important;
+    align-items: center;
+} */
+
+.container_edit_manageroom {
+    background-color: var(--bg-nav);
+    color: white;
+    position: fixed;
+    width: 75%;
+    height: 83%;
+    top: 70px;
+    left: 233px;
+    font-size: 18px;
+    user-select: none;
+    border-radius: 10px;
+}
+
+.title-box {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* background-color: #efefef; */
+    color: #000;
+    padding-left: 15px;
+}
+
+.height-auto {
+    height: auto !important;
+}
+
+.title-box h2 {
+    padding: 8px;
+}
+
+.title-box a {
+    padding: 7px 20px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    border: 1px solid #fff;
+    background-color: var(--bg-nav);
+    border-radius: 5px;
+    transition: all 0.15s ease-in-out;
+}
+
+.title-box a:hover {
+    border: 1px solid #000;
+    background-color: #fff;
+    color: black;
+    scale: 1.05;
+}
+
+.box_manageroom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box_manageroom a {
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    padding: 14px 26px;
+    font-weight: 650;
+    transition: all 0.15s ease-in-out;
+}
+
+.box_manageroom a:hover {
+    scale: 1.05;
+    background-color: #333;
+    color: white;
+}
+
+.box_manageroom form fieldset {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    width: 400px;
+}
+
+.box_manageroom form:nth-child(2) fieldset {
+
+    width: 465px !important;
+}
+
+.box-4 {
+    display: grid;
+    grid-template-columns: 15% 45% 15% 25%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.box_manageroom form fieldset .input-search {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 280px;
+    height: 35px;
+    outline: none;
+}
+
+.box_manageroom form fieldset .input-filter {
+    width: inherit !important;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 280px;
+    height: 35px;
+
+    outline: none;
+}
+
+.price-flex {
+    justify-content: center;
+    display: flex;
+}
+
+.box_manageroom form fieldset .submit-search {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #cccccc;
+    border: 1px solid #fff;
+    font-weight: 650;
+    margin-left: 8.5px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.box_manageroom form fieldset .submit-search:hover {
+    background-color: var(--bg-nav);
+    color: white;
+    scale: 1.05;
+}
+
+
+
+
+.inf-room {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.inf-room ul li {
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: 12.5% 20% 15% 12.5% 9.5% 12% 6.5% 6.5% 6.5%;
+    list-style-type: none;
+
+}
+.inf-room ul .avalbe {
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: 12.5% 20% 12.5% 12.5% 7% 8.5% 8.5% 6.5% 6.5% 6.5%;
+    list-style-type: none;
+
+}
+
+.inf-revenue ul li {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    list-style-type: none;
+}
+
+
+
+.design_bill ul li{
+    grid-template-columns:15% 15% 20% 20% 10.5%  6.5% 6.5% 6.5%;
+    
+
+
+}
+.table-content{
+    border-collapse: collapse !important;
+
+}
+.fa-eye{
+color: #000 !important;
+}
+
+
+.inf-room ul li div  {
+    padding: 10px 0;
+    border: 1.5px solid #ccc;
+    border-collapse: collapse;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+.inf-room ul li:first-child div {
+    background-color: #fff;
+    border: 1.5px solid #ccc;
+    color: black;
+    font-weight: 650;
+}
+
+.inf-room ul li:first-child div p {
+    font-weight: 700;
+}
+
+.inf-room ul li div p {
+    text-align: center;
+    font-weight: normal;
+}
+
+
+.delete-room a {
+    
+    padding: 4px 6px;
+    color: rgb(248, 43, 43);
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.delete-room a:hover {
+    scale: 1.05;
+}
+
+#errors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: var(--color-err);
+}
+
+.container-edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.text-num-room {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #000;
+    background-color: #fff;
+    width: 30%;
+    height: 40px;
+    padding: 10px;
+}
+
+.edit-room a {
+    color: rgb(35, 69, 239);
+    padding: 4px 17.8px;
+   
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.edit-room a:hover {
+    scale: 1.05;
+}
+
+.view-room a {
+    color: rgb(230, 230, 230);
+    padding: 4px 17.8px;
+   
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.view-room a:hover {
+    scale: 1.05;
+}
+
+
+.num-page {
+    display: flex;
+    width: 100%;
+    /* height: 13%; */
+    align-items: center;
+    justify-content: center;
+}
+
+.num-page ul {
+    display: flex;
+    align-items: center;
+}
+
+.num-page ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    list-style-type: none;
+}
+
+.num-page ul li a {
+    font-weight: 650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: black;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.active-a {
+    background-color: rgb(20, 174, 6) !important;
+    color: white !important;
+}
+
+.num-page ul li:nth-child(2) .active-b {
+    background-color: rgb(20, 174, 6) !important;
+    color: white !important;
+}
+
+.num-page ul li a:hover {
+    scale: 1.05;
+}
+
+.none-grid {
+    display: block !important;
+}
+
+/* ------------------------------------------------------------------ */
+
+
+
+.ctn_partner{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: black; */
+    display: flex;
+}
+
+
+
+
+
+.ctn_right_part{
+    width:85% ;
+    
+}
+
+.ctn_content{
+    width:100% ;
+    height: 85%;
+    display: flex;
+}
+
+
